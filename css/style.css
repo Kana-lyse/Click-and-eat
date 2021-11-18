@@ -1,0 +1,138 @@
+:root{
+    --color1:rgb(2, 126, 33);
+    --color2:#0b266b;
+    --color3:#5a445396;
+    --box-sh:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+/* Style de l'ensemble du document */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+/* Style général des sections */
+section{
+    padding:2rem 9%;
+}
+
+
+section:nth-child(even){
+    background:#eee;
+}
+
+.sub-heading{
+    text-align: center;
+    color:var(--color1);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+    color:var(--color2);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+  /* Style des boutons */
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--color2);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+}
+
+/* Style du survol des boutons */
+.btn:hover{
+    background: var(--color1);
+    letter-spacing: .1rem;
+}
+
+
+/* Style de la tête de page et barre de navigation */
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background: #fff;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-sh);
+}
+
+/* Style logo dans la barre de navigation */
+header .logo{
+    color:var(--color2);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color:var(--color1);
+}
+
+header .logo a{
+    font-size: 1.7rem;
+}
+
+/* Style des onglets de la barre de navigation */
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--color3);
+}
+
+/* Préparation du paramètrage de suivis et survol onglets */
+header .navbar a.active,
+header .navbar a:hover{
+    color:#fff;
+    background: var(--color1);
+}
+
+/* Style des icones reseaux sociaux */
+header .social i,
+header .social a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .social i:hover,
+header .social a:hover{
+    color:#fff;
+    background: var(--color1);
+    transform:scale(1.25)
+}
+
+/* On cache le menu-nav, on en a besoin seulement pour media querry */
+header .social #menu-nav{
+    display: none;
+}
