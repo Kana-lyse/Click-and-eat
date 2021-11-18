@@ -1,17 +1,22 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
 :root{
-    --color1:rgb(2, 126, 33);
-    --color2:#0b266b;
-    --color3:#5a445396;
+    --color1:rgb(1, 109, 28);
+    --color2:#0c2053;
+    --color3:#302b2ed8;
     --box-sh:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
 /* Style de l'ensemble du document */
 *{
-    font-family: 'Roboto', sans-serif;
-    margin:0; padding:0;
+    font-family: 'Cinzel', serif;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none; border:none;
+    outline: none;
+    border:none;
     text-transform: capitalize;
     transition: all .2s linear;
 }
@@ -22,6 +27,20 @@ html{
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
+
+/* Style de la webkit scrollbar, mise avec thème de couleur du site */
+html::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: var(--color1);
+    border-radius: 5rem;
+  }
 
 /* Style général des sections */
 section{
@@ -97,10 +116,11 @@ header .logo a{
 
 /* Style des onglets de la barre de navigation */
 header .navbar a{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     border-radius: .5rem;
     padding:.5rem 1.5rem;
-    color:var(--color3);
+    color:var(--color2);
+    text-transform:uppercase;
 }
 
 /* Préparation du paramètrage de suivis et survol onglets */
@@ -120,9 +140,10 @@ header .social a{
     width:4.5rem;
     text-align: center;
     font-size: 1.7rem;
-    color:var(--black);
+    color:var(--color2);
     border-radius: 50%;
     background: #eee;
+    
 }
 
 header .social i:hover,
@@ -136,3 +157,42 @@ header .social a:hover{
 header .social #menu-nav{
     display: none;
 }
+
+/* Début du style de la page d'accueil */
+.pa .pa-slider .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem; 
+    padding-top: 9rem;
+}
+
+.pa .pa-slider .slide .content{
+    flex:1 1 45rem;
+}
+
+.pa .pa-slider .slide .image{
+    flex:1 1 45rem;
+}
+
+.pa .pa-slider .slide .image img{
+    width: 100%;
+}
+
+.pa .pa-slider .slide .content span{
+    color:var(--green);
+    font-size: 2.5rem;
+}
+
+.pa .pa-slider .slide .content h3{
+    color:var(--black);
+    font-size: 7rem;
+}
+
+.pa .pa-slider .slide .content p{
+    color:var(--light-color);
+    font-size: 2.2rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+}
+/* Fin du style de la page d'accueil */
