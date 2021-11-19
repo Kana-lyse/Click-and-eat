@@ -69,14 +69,14 @@ section:nth-child(even){
 
   /* Style des boutons */
 .btn{
-    margin-top: 1rem;
-    display: inline-block;
+    margin-top: 2rem;
+    display: flex;
     font-size: 1.7rem;
     color:#fff;
     background: var(--color2);
     border-radius: .5rem;
     cursor: pointer;
-    padding:.8rem 3rem;
+    padding:.8rem 3rem .8rem 1.5rem;
 }
 
 /* Style du survol des boutons */
@@ -168,11 +168,11 @@ header .social #menu-nav{
 }
 
 .pa .pa-slider .slide .content{
-    flex:1 1 45rem;
+    flex:1 1 30rem;
 }
 
 .pa .pa-slider .slide .image{
-    flex:1 1 45rem;
+    flex:1 1 30rem;
 }
 
 .pa .pa-slider .slide .image img{
@@ -180,19 +180,24 @@ header .social #menu-nav{
 }
 
 .pa .pa-slider .slide .content span{
-    color:var(--green);
+    color:var(--color1);
     font-size: 2.5rem;
 }
 
 .pa .pa-slider .slide .content h3{
-    color:var(--black);
-    font-size: 7rem;
+    color:var(--color2);
+    font-size: 5rem;
 }
 
 .pa .pa-slider .slide .content p{
-    color:var(--light-color);
-    font-size: 2.2rem;
-    padding:.5rem 0;
-    line-height: 1.5;
+    color:var(--color3);
+    font-size: 2rem;
+    padding:.5rem 0.5rem;
+    line-height: 1.25;
 }
+
+.swiper-pagination-bullet-active{
+    background:var(--color1);
+}
+
 /* Fin du style de la page d'accueil */
