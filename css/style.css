@@ -1,16 +1,17 @@
 /* Google font */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 :root{
     --color1:rgb(1, 109, 28);
     --color2:#0c2053;
     --color3:#302b2ed8;
+    --color4:#eee;
     --box-sh:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
-/* Style de l'ensemble du document */
+/******** Style de l'ensemble du document */
 *{
-    font-family: 'Cinzel', serif;
+    font-family: 'Itim', cursive;
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -28,7 +29,7 @@ html{
     scroll-behavior: smooth;
 }
 
-/* Style de la webkit scrollbar, mise avec thème de couleur du site */
+/******** Style de la webkit scrollbar, mise avec thème de couleur du site */
 html::-webkit-scrollbar {
     width: 1rem;
   }
@@ -39,14 +40,13 @@ html::-webkit-scrollbar {
   
   html::-webkit-scrollbar-thumb {
     background: var(--color1);
-    border-radius: 5rem;
+    border-radius: 3rem;
   }
 
 /* Style général des sections */
 section{
     padding:2rem 9%;
 }
-
 
 section:nth-child(even){
     background:#eee;
@@ -67,7 +67,7 @@ section:nth-child(even){
     text-transform: uppercase;
 }
 
-  /* Style des boutons */
+  /********* Style des boutons *********/
 .btn{
     margin-top: 2rem;
     display: flex;
@@ -79,14 +79,14 @@ section:nth-child(even){
     padding:.8rem 3rem .8rem 1.5rem;
 }
 
-/* Style du survol des boutons */
+/******** Style du survol des boutons ********/
 .btn:hover{
     background: var(--color1);
     letter-spacing: .1rem;
 }
 
 
-/* Style de la tête de page et barre de navigation */
+/********* Style de la tête de page et barre de navigation */
 header{
     position: fixed;
     top:0; left: 0; right:0;
@@ -99,7 +99,7 @@ header{
     box-shadow: var(--box-sh);
 }
 
-/* Style logo dans la barre de navigation */
+/******** Style logo dans la barre de navigation */
 header .logo{
     color:var(--color2);
     font-size: 2.5rem;
@@ -114,23 +114,23 @@ header .logo a{
     font-size: 1.7rem;
 }
 
-/* Style des onglets de la barre de navigation */
+/******* Style des onglets de la barre de navigation */
 header .navbar a{
     font-size: 1.5rem;
     border-radius: .5rem;
-    padding:.5rem 1.5rem;
+    padding: 0.7rem 1rem;
     color:var(--color2);
     text-transform:uppercase;
 }
 
-/* Préparation du paramètrage de suivis et survol onglets */
+/**************Préparation du paramètrage de suivis et survol onglets */
 header .navbar a.active,
 header .navbar a:hover{
     color:#fff;
     background: var(--color1);
 }
 
-/* Style des icones reseaux sociaux */
+/********** Style des icones reseaux sociaux */
 header .social i,
 header .social a{
     cursor: pointer;
@@ -153,12 +153,12 @@ header .social a:hover{
     transform:scale(1.25)
 }
 
-/* On cache le menu-nav, on en a besoin seulement pour media querry */
+/********** On cache le menu-nav, on en a besoin seulement pour media querry */
 header .social #menu-nav{
     display: none;
 }
 
-/* Début du style de la page d'accueil */
+/**********Début du style de la page d'accueil */
 .pa .pa-slider .slide{
     display: flex;
     align-items: center;
@@ -200,4 +200,53 @@ header .social #menu-nav{
     background:var(--color1);
 }
 
-/* Fin du style de la page d'accueil */
+/*********** Fin du style de la page d'accueil */
+
+/***********Début de la présentation du menu */
+
+
+.carte .menu{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carte .menu .plat{
+    display:grid;
+    justify-content: space-between;
+}
+.carte .menu .plat .entree{
+    
+}
+.carte .menu .plat .principal{
+    
+}
+.carte .menu .plat .dessert{
+    
+}
+ 
+
+
+
+/*************************Pied de page ************************** */
+footer{
+    background-color: #fff;
+    padding: 10px 100px;
+    margin: 0;
+    color: var(--color3);
+}
+footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .colonnes .colonne p:hover{
+    color: var(--color1);
+    transform:scale(1.15);
+    cursor: pointer;
+
+}
+
+/*************** Fin du pied de page *********/
